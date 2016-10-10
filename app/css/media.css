@@ -1,0 +1,146 @@
+@media (max-width: 1200px){
+	.fisrt_step{
+		margin-left: 5px;
+	}
+	.second_step{
+		margin-left: 5px;
+	}
+
+@media (max-width: 950px){
+	.fisrt_step{
+		margin-left: 5px;
+	}
+	.second_step{
+		margin-left: 5px;
+	}
+	.ad{
+		display: none;
+		float:left;
+		margin-top: 450px;
+	}
+	.content_item1{
+		margin-left: 15px;
+	}
+	.content_item2{
+		margin-left: 150px;
+	}
+	.content_item3{
+		margin-left: 100px;
+	}
+
+}
+@media (max-width: 950px){
+	.content_item2{
+		margin-left: 90px;
+	}
+	.content_item3{
+		margin-left: 65px;
+	}
+}
+
+
+@media (max-width: 500px){
+	.wrap{
+		/*float: left;	*/
+		margin:0 auto;
+		/*max-width:500px;*/
+		/*min-width:320px;*/
+		width: auto;
+	}
+	.line{
+		display: none;
+	}
+	.content_item1{
+		width: 60%;
+		margin-left: 37%;
+		padding-bottom: 25px;	
+	}
+	.content_item2{
+		width: 60%;
+		margin-left: 37%;
+		padding-bottom: 25px;	
+	}
+	.content_item3{
+		width: 60%;
+		margin-left: 37%;
+	}
+	.ad{
+		display: none;
+	}
+	.fisrt_step{
+		margin-left: 1px;
+	}
+
+	.fisrt_step .step1_title .h1_step1{
+		font-size: 22px;
+		margin-top: 30px;
+	}
+	.fisrt_step .step1_title .p_step1{
+		font-size: 14px;
+	}
+
+	.second_step{
+		margin-left: 1px;
+	}
+	.second_step .second_step_title .h1_step2{
+		font-size: 22px;
+		margin-top: 8px;
+	}
+
+	.second_step .second_step_title .p_step2{
+		font-size: 14px;
+	}
+
+	.second_step .info_item .information{
+		width: 280px;
+		height: 250px;
+	}
+
+	.second_step .info_item .p_simply_comp{
+		font-size: 10px;
+		margin-left: 5px;
+	}
+
+	.second_step .your_name{
+		margin-left: 5px;
+	}
+	.second_step .email_adress .input_long{
+		width: 150px;
+	}
+
+	.second_step #email_address{
+		margin-top: 10px;
+		margin-left: 5px;
+		float: left;
+	}
+	.second_step #house_number{
+		margin-left: 5px;
+		float: left;
+	}
+
+	.second_step #postcode{
+		margin-left: 5px;
+		float: left;
+	}
+	.second_step #phone{
+		margin-left: 5px;
+		float: left;
+	}
+	#information{
+		width: 320px;
+	}
+
+	.second_step .button_step2{
+		float: left;
+	}
+
+	.second_step .steps_footer{
+		float: left;
+	}
+	.popup_success{
+		margin: 100px auto;
+	}
+	.popup_success .p_text{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="../css/main.min.css">
+	<link media="screen" href="../css/media.css" rel="stylesheet">
+<body>
+<div class="wrap">
+	<div class="content">
+		<div class="content_header">
+			<h1><span class="h1_green">Request boiler quotes</span><span class="h2_grey"> from 3 of the best installers</span></h1>
+		</div>
+		<div class="wrap_cont">
+			<div class="content_item1">
+				<p class="p_steps">step1</p>
+				<img src="../img/icon_1.png" alt="icon_1" class="icon_1">	
+				<p class="p_steps_under">Complete the form</p>
+			</div>
+			<div class="content_item2">
+				<p class="p_steps">step2</p>
+				<img src="../img/icon_3.png" alt="icon_1" class="icon_2">	
+				<p class="p_steps_under2">Receive quotes from installers</p>
+			</div>
+			<div class="content_item3">
+				<p class="p_steps">step3</p>
+				<img src="../img/icon_2.png" alt="icon_3" class="icon_3">	
+				<p class="p_steps_under3">Choose the best</p>
+			</div>
+		</div>	
+	</div>
+</div>	
+
+
+<div class="line"></div>
+
+	<div class="ad"><img src="../img/ad.jpg" alt="ad"></div>
+
+
+<form action="../ajax/mail.php" method="post">
+	<input type="hidden" name="project_name" value="BoilerHub.com">
+	<input type="hidden" name="admin_email" value="">
+	<input type="hidden" name="form_subject" value="New request">
+	<div class="wrap">
+	
+		<div class="fisrt_step ">
+			<div class="step1_title">
+				<p class="p_step1">Step 1</p>
+				<a id="step_one" class="step_one"><h1 class="h1_step1">Your requirements</h1></a>
+			</div>
+			<div class="first_item ">
+				<div class="select1_title">
+					<h2>Work Required</h2>
+				</div>
+				<div class="select1">
+					<select name="WorkRequired" class="select_arrow">
+						<option value="New Gas Boiler">New Gas Boiler</option> 
+		  				<option value="Repair/Service">Repair/Service</option>
+					</select>	
+				</div>		
+				<div class="select1_title">
+					<h2>Timescale</h2>
+				</div>
+				<div class="select1">
+					<select name="Timescale" class="select_arrow">
+						<option value="ASAP">ASAP</option>
+						<option value="Within 1 Month">Within 1 Month</option>
+						<option value="Within 3 Months">Within 3 Months</option>
+						<option value="Longer than 3 months">Longer than 3 months</option>
+					</select>	
+				</div>
+				<input type="button" class="button_step1" value="CONTINUE" id="continue">
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap">
+		<div class="second_step ">
+			<div class="second_step_title">
+				<p class="p_step2">Step 2</p>
+				<a id="step_second" class="step_second"><h1 class="h1_step2">Compare your quotes</h1></a>
+			</div>
+			<div class="second_item hidden">
+				<div class="info_item">
+					<img src="../img/info.png" alt="" class="info_png">
+					<a id="information"><p class="info">Why do we ask for this?</p></a>
+				<div class="information hidden">
+					<p class="inform_title">What happens next?</p>
+					<a id="information_close"><img src="../img/close_gr.png" class="close"></a>
+					<p class="infor_p">In order to refer you to the most appropriate installers, we first need to find out a little more about your requirements. One of our (really friendly) energy advisors will call you within an hour and (if you're happy) up to three installers can then contact you to provide your free quotations.</p>
+				</div>	
+					<p class="p_simply_comp">Simply complete the form to compare your three free boiler quotes.</p>
+				</div>
+				<div class="your_name">
+					<h2 class="your_name_title">Your name</h2>
+					<select name="Person" class="select_arrow">
+						<option value="Mr">Mr</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Ms">Ms</option>
+						<option value="Miss">Miss</option>
+						<option value="Dr">Dr</option>
+						<option value="Prof">Prof</option>
+					</select>
+					<input name="FirstName" type="text" class="input_short" placeholder=" First Name" required>	
+					<input name="LastName" type="text" class="input_short" placeholder=" Last Name" required>	
+				</div>
+				<div class="email_adress" id="email_address">
+					<h2 class="your_email_title">Email Address</h2>
+					<input name="EmailAddress" type="email" class="input_long" placeholder=" e-mail" autocomplete="off">
+				</div>
+				<div class="email_adress" id="house_number">
+					<h2 class="your_email_title">House Number</h2>
+					<input name="HouseNumber" type="text" class="input_long" placeholder=" house number" pattern="^[ 0-9]+$" >
+				</div>
+				<div class="email_adress" id="postcode">
+					<h2 class="your_email_title">Postcode</h2>
+					<input name="Postcode" type="text" class="input_long" placeholder=" postcode" pattern="^[ 0-9]+$" >
+				</div>
+				<div class="email_adress" id="phone">
+					<h2 class="your_email_title">Phone</h2>
+					<input name="Phone" type="text" class="input_long" placeholder=" phone number" pattern="[0-9]{9,}" required>
+				</div>
+				<input type="submit" class="button_step2" id="confirm" value="CONFIRM">
+				<p class="steps_footer">Your information is data protected. We will never pass this onto any other party without your express permission.</p>
+			</div>
+		</div>
+	</div>
+</form>
+
+
+
+<div class="wrap">
+	<div class="popup_success hidden">
+		<p class="p_title">Thank you</p>
+		<p class="p_text">We have received your request for quotations. One of our (very friendly) energy<br>advisors will contact you very soon to discuss your requirements in more detail.</p>
+	</div>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
